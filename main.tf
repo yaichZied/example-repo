@@ -121,7 +121,7 @@ resource "azurerm_linux_virtual_machine" "mtc-vm" {
 
   admin_ssh_key {
     username   = "adminuser"
-    public_key = file("/builds/ziedYaich/demo-pfa/example-repo/pfa-rsa.pub")
+    public_key = file("pfa-rsa.pub")
   }
 
   os_disk {
